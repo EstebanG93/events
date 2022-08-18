@@ -7,8 +7,35 @@
     <title>Menú</title>
 </head>
 <body>
-    <h1>Factura de venta</h1>
-    
-    <script src="./src/index.js"></script>
+    <h1>Realizar pedido</h1>
+    <form>
+        <label for="producto">Seleccione el producto:</label>
+        <select name="item" id="item">
+            <option value="0">Seleccione</option>
+            <optgroup label="Comidas">
+                <option value="1">Sandwich</option>
+                <option value="2">Ensalada</option>
+                <option value="3">Hamburguesa</option>
+                <option value="4">Hot Dog</option>
+            </optgroup>
+            <optgroup label="Bebidas">
+                <option value="5">Coca-Cola</option>
+                <option value="6">Pepsi</option>
+                <option value="7">Fanta</option>
+            </optgroup>
+        </select>
+        <br>
+        <label for="cantidad">Indique cantidad:</label>
+        <input type="number" min="1" value="1" id="Qty">
+        <br>
+        <label for="unitario" id="unit">Valor unitario:</label>
+        <br>
+        <label for="total" id="total">Valor total</label>
+        <br>
+        <label>*Precios mostrados son antes de IVA.</label>
+    </form>
+    <button id="Add">Agregar</button>
+    <button id="End">Finalizar pedido</button>
+   <script src="./src/index.js"></script>
 </body>
 </html>
